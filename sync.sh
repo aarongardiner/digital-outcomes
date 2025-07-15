@@ -1,5 +1,6 @@
 #!/bin/bash
 set -xe
 git add . 
-git commit -m "$1"
+read -p "Enter Commit Message: " message
+git commit -m "$message"
 git push --force
